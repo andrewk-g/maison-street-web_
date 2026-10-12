@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Precios y pedidos | Maison Street</title>
+  <meta name="description" content="Lista de precios de Maison Street y formulario para hacer tu pedido de ropa urbana con envío nacional.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="cabecera__interior">
+      <p class="cabecera__logo">Maison Street</p>
+      <nav class="menu" aria-label="Principal">
+        <ul class="menu__lista">
+          <li><a class="menu__enlace" href="index.html">Inicio</a></li>
+          <li><a class="menu__enlace" href="index.html#productos">Productos</a></li>
+          <li><a class="menu__enlace" href="index.html#opiniones">Opiniones</a></li>
+          <li><a class="menu__enlace menu__enlace--activo" href="pedidos.html#precios">Precios</a></li>
+          <li><a class="menu__enlace" href="pedidos.html#pedido">Pedido</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="seccion" id="precios">
+      <h1 class="seccion__titulo">Precios y pedidos</h1>
+      <p class="seccion__intro">Todos los precios están en pesos colombianos.</p>
+      <div class="tabla-contenedor">
+        <table class="tabla">
+          <caption class="tabla__titulo">Lista de precios Maison Street</caption>
+          <thead>
+            <tr><th scope="col">Prenda</th><th scope="col" class="tabla__precio">Precio</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Hoodies</td><td class="tabla__precio">$160.000</td></tr>
+            <tr><td>Camisetas</td><td class="tabla__precio">$120.000</td></tr>
+            <tr><td>Jeans</td><td class="tabla__precio">$180.000</td></tr>
+            <tr class="tabla__fila--destacada"><td>Conjuntos (promo)</td><td class="tabla__precio"><s>$320.000</s> $280.000</td></tr>
+            <tr><td>Bermudas</td><td class="tabla__precio">$100.000</td></tr>
+            <tr><td>Pantalonetas</td><td class="tabla__precio">$95.000</td></tr>
+            <tr><td>Gorras</td><td class="tabla__precio">$80.000</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="2">Envíos solo a nivel nacional.</td></tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section class="seccion" id="pedido">
+      <h2 class="seccion__titulo">Haz tu pedido</h2>
+      <p class="seccion__intro">Llena el formulario y te contactamos por WhatsApp. También puedes escribir directo al <a href="https://wa.me/573219483750" target="_blank" rel="noopener">321 948 3750</a>.</p>
+      <form class="formulario" action="https://httpbin.org/post" method="post">
+        <div class="formulario__grupo">
+          <label class="formulario__etiqueta" for="nombre">Nombre completo</label>
+          <input class="formulario__campo" type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="formulario__grupo">
+          <label class="formulario__etiqueta" for="whatsapp">WhatsApp</label>
+          <input class="formulario__campo" type="tel" id="whatsapp" name="whatsapp" required>
+        </div>
+        <div class="formulario__grupo">
+          <label class="formulario__etiqueta" for="correo">Correo electrónico</label>
+          <input class="formulario__campo" type="email" id="correo" name="correo">
+        </div>
+        <div class="formulario__grupo">
+          <label class="formulario__etiqueta" for="prenda">Prenda</label>
+          <select class="formulario__campo" id="prenda" name="prenda">
+            <option>Hoodie</option><option>Camiseta</option><option>Jeans</option>
+            <option>Conjunto</option><option>Bermuda</option><option>Pantaloneta</option><option>Gorra</option>
+          </select>
+        </div>
+        <div class="formulario__grupo">
+          <label class="formulario__etiqueta" for="cantidad">Cantidad</label>
+          <input class="formulario__campo" type="number" id="cantidad" name="cantidad" min="1" max="10" value="1">
+        </div>
+        <div class="formulario__grupo">
+          <label class="formulario__etiqueta" for="mensaje">Talla, ciudad y dirección</label>
+          <textarea class="formulario__campo" id="mensaje" name="mensaje" rows="4"></textarea>
+        </div>
+        <button class="boton" type="submit">Enviar pedido</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>© 2026 Maison Street</p>
+    <p><a href="https://www.instagram.com/maisonstreet_x/" target="_blank" rel="noopener">Instagram @maisonstreet_x</a> · <a href="https://wa.me/573219483750" target="_blank" rel="noopener">WhatsApp 321 948 3750</a></p>
+    <p>Sitio desarrollado por TU NOMBRE COMPLETO</p>
+  </footer>
+</body>
+</html>
