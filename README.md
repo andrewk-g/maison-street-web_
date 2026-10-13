@@ -3,6 +3,7 @@
 **Nombre:** camilo andres gonzalez 
 **Fecha:** 12 de octubre de 2026  
 **Sitio publicado:** https://andrewk-g.github.io/maison-street/ 
+https://deepwiki.com/andrewk-g/maison-street-web_
 
 ## 1. El proyecto
 
